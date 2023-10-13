@@ -1,0 +1,20 @@
+{
+  "name": "githistoryfulltimeforce",
+  "version": "1.0.0",
+  "description": "Show all the history commits of the project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ricardo049025/GitHistoryFullTimeForce.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ricardo049025/GitHistoryFullTimeForce/issues"
+  },
+  "homepage": "https://github.com/ricardo049025/GitHistoryFullTimeForce#readme"
+}
