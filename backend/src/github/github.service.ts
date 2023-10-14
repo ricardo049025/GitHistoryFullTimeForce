@@ -11,18 +11,14 @@ export class GithubService {
   private readonly repo: string = process.env.GITHUB_REPO;
 
   constructor() {
-    this.octokit = new Octokit({ auth: process.env.TOKEN });
+    this.octokit = new Octokit({ auth: process.env.TOKEN })
   }
 
   async getCommits(): Promise<any[]> {
-    try {
       const response = await this.octokit.repos.listCommits({
         owner: this.owner,
         repo: this.repo,
       });
       return response.data;
-    } catch (error) {
-      throw new Error(`Failed to fetch commits: ${error.message}`);
-    }
   }
 }
