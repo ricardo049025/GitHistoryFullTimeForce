@@ -1,24 +1,21 @@
-import logo from './logo.svg';
+import {Route, BrowserRouter as Router, Switch,Redirect ,Suspense} from "react-router-dom";
+import MainNavigation from "./shared/components/Navigation/MainNavigation";
+import LoadingSpinner from './shared/components/UIElements/LoadingSpinner';
 import './App.css';
+import Home from "./home/pages/Home";
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+        <MainNavigation />
+        <main>
+          <Switch>
+                <Route path="/" exact><Home /> </Route>
+                <Redirect to="/"/>
+              </Switch>
+        </main>
+    </Router>
   );
 }
 
