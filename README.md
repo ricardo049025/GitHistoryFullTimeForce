@@ -8,7 +8,7 @@ In the project you can find the next two folders:
 2) Go to the folder with the command: cd GitHistoryFullTimeForce and to the folder /backend 
 3) Install the npm packages with the nex command: npm  install
 4) In root folder backend exist an .env file where you can find the variable environment, so the variable "TOKEN" is empty,
-   so you need to add the next token: /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/ (remove the slash).
+   so you need to add the next token: ***********lZOvas7K0CLdYwrSBcsyx0y0RZYzg (remove (*) by (ghp_XwhN9Xh)).
 5) Once you have added the token in the Token variable, we have to run up the backend application with the next command: nest start
 6) It's important to know that exist one route to get the information about the git history commits: http://localhost:5001/github/commits.
 7) You can run the unit tests of the project with the next command: npm run test
